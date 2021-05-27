@@ -5,8 +5,7 @@ from rest_framework import status
 import json, logging, os
 from pymongo import MongoClient
 
-#mongo_uri = 'mongodb://' + os.environ["MONGO_HOST"] + ':' + os.environ["MONGO_PORT"]
-mongo_uri = 'mongodb://localhost:27017'
+mongo_uri = 'mongodb://' + os.environ["MONGO_HOST"] + ':' + os.environ["MONGO_PORT"]
 db = MongoClient(mongo_uri)['test_db']["test_col"]
 
 class TodoListView(APIView):

@@ -14,20 +14,23 @@ function DataSending(event){
 
 export function App() {
   return (
-    <div className="App">
+    <div className="App" class="body">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
       <div>
-        <h1>List of TODOs</h1>
+        <p class="heading">List of TODOs</p>
         <DataFetching />
       </div>
       <div>
-        <h1>Create a ToDo</h1>
+        <h1 class="heading">Create a ToDo</h1>
         <form onSubmit={DataSending}>
           <div>
-            <label for="todo">ToDo: </label>
-            <input type="text" id="todo" name="todo"/>
+            <label class="data" for="todo">ToDo: </label>
+            <input class="data" type="text" id="todo" name="todo"/>
           </div>
           <div style={{"marginTop": "5px"}}>
-            <input type="submit" value="Add ToDo!"/>
+            <input class="gradient-button" type="submit" value="Add ToDo!"/>
           </div>
         </form>
       </div>

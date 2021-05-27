@@ -15,7 +15,7 @@ function DataFetching(){
         <div>
             <ul>
                 {tasks.map(task => (
-                    <li key={task.id}>{task.name}</li>
+                    <li key={task.id} class="data">{task.name}</li>
                 ))}
             </ul>
         </div>
